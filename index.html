@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyn Infografik</title> <!-- Title in German -->
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font Inter */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+            color: #333; /* Dark gray text */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background-color: #ffffff;
+            border-radius: 1.5rem; /* More rounded corners for the main container */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
+        .card {
+            background-color: #f8f9fa; /* Slightly off-white for cards */
+            border-radius: 1rem; /* Rounded corners for cards */
+            padding: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Lighter shadow for cards */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px); /* Slight lift on hover */
+        }
+        .card-icon {
+            font-size: 2.5rem; /* Larger icons */
+            margin-bottom: 1rem;
+            color: #4a90e2; /* A shade of blue for icons */
+        }
+        h2 {
+            font-size: 1.75rem; /* Larger section titles */
+            font-weight: 700;
+            color: #2c3e50; /* Darker blue-gray for titles */
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        h3 {
+            font-size: 1.25rem; /* Card titles */
+            font-weight: 600;
+            color: #34495e; /* Slightly lighter blue-gray for card titles */
+            margin-bottom: 0.75rem;
+        }
+        ul {
+            list-style: none; /* Remove default list bullets */
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        li::before {
+            content: '•'; /* Custom bullet point */
+            color: #4a90e2;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        .highlight {
+            color: #27ae60; /* Green for highlights */
+            font-weight: 600;
+        }
+        .conclusion-card {
+            background-color: #e8f5e9; /* Light green for conclusion */
+            border: 1px solid #a5d6a7;
+            padding: 2rem;
+            border-radius: 1rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .conclusion-card p {
+            font-size: 1.1rem;
+            color: #2e7d32;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header class="text-center mb-10">
+        <h1 class="text-4xl font-bold text-blue-800 mb-4">📊 Joyn Infografik: Ein Überblick</h1>
+        <p class="text-lg text-gray-600">Detaillierte Analyse der Streaming-Plattform Joyn</p>
+    </header>
+
+    <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- 1. Was ist Joyn? -->
+        <section class="card">
+            <div class="card-icon">📺</div>
+            <h3>1. Was ist Joyn?</h3>
+            <p>Joyn ist eine deutsche Streaming-Plattform für TV-Inhalte, Filme und Serien.</p>
+            <ul class="mt-4">
+                <li>Gegründet: <span class="highlight">10. August 2017</span> als Joint Venture (ProSiebenSat.1 & Discovery).</li>
+                <li>Besitzer: Seit 2022 <span class="highlight">100% ProSiebenSat.1</span>.</li>
+                <li>Modelle:
+                    <ul>
+                        <li><span class="highlight">Kostenlos</span> mit Werbung</li>
+                        <li><span class="highlight">Joyn Plus+</span> (kostenpflichtig, werbefrei)</li>
+                    </ul>
+                </li>
+                <li>Inhalte: Über 40 Live-TV-Sender, große Mediathek, exklusive Eigenproduktionen (z.B. "Jerks").</li>
+            </ul>
+        </section>
+
+        <!-- 2. Wettbewerb -->
+        <section class="card">
+            <div class="card-icon">⚔️</div>
+            <h3>2. Wettbewerb</h3>
+            <p>Joyn steht in Deutschland in starkem Wettbewerb mit:</p>
+            <ul class="mt-4">
+                <li>Internationale Marktführer: <span class="highlight">Netflix, Amazon Prime Video</span></li>
+                <li>Familie & Franchise: <span class="highlight">Disney+</span></li>
+                <li>Deutscher Konkurrent: <span class="highlight">RTL+</span></li>
+                <li>Regionale Anbieter: <span class="highlight">ARD Mediathek, ZDF Mediathek</span></li>
+            </ul>
+            <p class="mt-4">Joyn hebt sich durch sein <span class="highlight">Freemium-Modell</span> ab.</p>
+        </section>
+
+        <!-- 3. Stärken und Kernkompetenzen -->
+        <section class="card">
+            <div class="card-icon">💪</div>
+            <h3>3. Stärken & Kernkompetenzen</h3>
+            <ul class="mt-4">
+                <li>Wichtigste Stärke: <span class="highlight">Freemium-Modell</span> (erreicht zahlende & kostenlose Nutzer).</li>
+                <li>Alleinstellungsmerkmal: Enge Zusammenarbeit mit <span class="highlight">ProSiebenSat.1</span> (Live-TV, exklusive Inhalte).</li>
+                <li>Fokus auf <span class="highlight">deutsche Inhalte</span> und lokale Eigenproduktionen.</li>
+                <li>Internationale Anbieter haben diesen Bezug zum deutschen Markt nicht.</li>
+            </ul>
+        </section>
+
+        <!-- 4. Unternehmensstruktur -->
+        <section class="card">
+            <div class="card-icon">🏢</div>
+            <h3>4. Unternehmensstruktur</h3>
+            <ul class="mt-4">
+                <li>Rechtsform: <span class="highlight">GmbH</span> mit Sitz in München.</li>
+                <li>Eigentümer: <span class="highlight">100% ProSiebenSat.1 Media SE</span>.</li>
+                <li>Aktuelle Geschäftsführung:
+                    <ul>
+                        <li>Katharina Frömsdorf (CEO)</li>
+                        <li>Nicole Agudo Berbel</li>
+                        <li>Benjamin Risom</li>
+                    </ul>
+                </li>
+                <li>Aufsichtsrat: Besetzt von ProSiebenSat.1 (<span class="highlight">Bert Habets</span> als Vorsitzender).</li>
+                <li>Tochterfirmen: Joyn Plus+ GmbH, Joyn Productions GmbH, Joyn Advertising Solutions GmbH, Joyn Österreich.</li>
+            </ul>
+        </section>
+
+        <!-- 5. Aktuelle Entwicklungen -->
+        <section class="card">
+            <div class="card-icon">📈</div>
+            <h3>5. Aktuelle Entwicklungen</h3>
+            <ul class="mt-4">
+                <li>Januar 2023: Start von <span class="highlight">Joyn Plus+</span> (werbefrei, bessere Qualität, mehr Inhalte).</li>
+                <li>März 2023: Exklusive Partnerschaft mit <span class="highlight">DAZN</span> für Sportinhalte.</li>
+                <li>Mai 2023: Über <span class="highlight">10,3 Millionen</span> monatliche Nutzer erreicht, <span class="highlight">RTL+ überholt</span>.</li>
+            </ul>
+        </section>
+
+        <!-- 6. Marktanalyse -->
+        <section class="card">
+            <div class="card-icon">🌊</div>
+            <h3>6. Marktanalyse</h3>
+            <p>Der Streaming-Markt in Deutschland ist ein harter <span class="highlight">"Red Ocean"</span>, d.h. ein Markt mit intensiver, bestehender Konkurrenz, in dem Unternehmen um einen bereits definierten Marktanteil kämpfen. Joyn navigiert in diesem blutroten Ozean, indem es versucht, durch sein Freemium-Modell und lokale Inhalte eine Nische zu finden.</p>
+            <ul class="mt-4">
+                <li>Dominanz großer internationaler Anbieter.</li>
+                <li>Hoher <span class="highlight">Preissensibilität</span> der Nutzer (Freemium zieht an, aber Umsatzgrenzen).</li>
+                <li>Ständigen Investitionen in Technologie (Server, Cloud, Algorithmen) notwendig.</li>
+                <li>Wenigen großen Anbietern und sehr hohen Eintrittsbarrieren.</li>
+            </ul>
+            <!-- Added information about Oligopoly -->
+            <p class="mt-2 text-gray-700">
+                Zudem ist der deutsche Streaming-Markt ein klassisches <span class="highlight">Oligopol</span>, was bedeutet, dass eine kleine Anzahl großer Unternehmen den Markt dominiert. Hohe Eintrittsbarrieren (z.B. hohe Kosten für Content-Produktion und Infrastruktur) machen den Markteintritt für neue Akteure äußerst schwierig, und die Entscheidungen eines Anbieters haben direkte Auswirkungen auf die Strategien der Wettbewerber.
+            </p>
+        </section>
+
+        <!-- 7. Zahlen und Vergleiche -->
+        <section class="card">
+            <div class="card-icon">🔢</div>
+            <h3>7. Zahlen & Vergleiche</h3>
+            <ul class="mt-4">
+                <li>Aktuelle Nutzer: ca. <span class="highlight">6,2 Millionen</span>.</li>
+                <li>Marktanteil (Abo-Markt): <span class="highlight">5,7%</span>.</li>
+                <li>Team: Kleines, schlankes Team im Vergleich zu Netflix/Prime Video.</li>
+                <li>Umsatz: Nicht separat veröffentlicht (läuft über ProSiebenSat.1).</li>
+            </ul>
+        </section>
+
+        <!-- 8. Marken und Recht -->
+        <section class="card">
+            <div class="card-icon">⚖️</div>
+            <h3>8. Marken & Recht</h3>
+            <ul class="mt-4">
+                <li>Eingetragene Markenrechte bei <span class="highlight">DPMA & WIPO</span>.</li>
+                <li>Hauptmarke: <span class="highlight">Joyn</span>.</li>
+                <li>Registriert in mehreren Klassen (Software, Unterhaltung, Online-Dienste).</li>
+                <li>Eigenes Logo & Corporate Design, <span class="highlight">EU-weit geschützt</span>.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Fazit -->
+    <section class="conclusion-card mt-8">
+        <h2 class="text-3xl font-bold text-green-700 mb-4">🔚 Fazit</h2>
+        <p>Joyn hat sich in einem sehr schwierigen Markt behauptet und wächst weiter.</p>
+        <p class="mt-2">Mit dem <span class="highlight">Freemium-Modell</span>, der Partnerschaft mit <span class="highlight">DAZN</span> und dem Fokus auf <span class="highlight">deutsche Inhalte</span> hat Joyn eine eigene Nische gefunden.</p>
+        <p class="mt-2">Die aktuellen Zahlen und Partnerschaften sind ein gutes Zeichen für die Zukunft. Ob es auf Dauer gegen die großen internationalen Player reicht, wird sich zeigen.</p>
+        <p class="mt-4 text-gray-500">Vielen Dank für Ihre Aufmerksamkeit!</p>
+    </section>
+</div>
+</body>
+</html>
